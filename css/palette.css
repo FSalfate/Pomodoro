@@ -1,0 +1,22 @@
+:root{
+  --redOrange: #f15025;
+  --white: #ffffff;
+  --platinum: #e6e8e6;
+  --lightGrey: #ced0ce;
+  --davysGray: #525252;
+  --jet: #333333;
+  --earieBlack: #191919;
+
+  --navBGColor: var(--earieBlack);
+  --navTextColor: var(--redOrange);
+
+  --buttonBGColor: var(--earieBlack);
+  --buttonTextColor: var(--redOrange);
+  --rangeColor: var(--redOrange);
+
+  --bracketColor: var(--redOrange);
+
+  --pomodoroColor: var(--redOrange);
+  --shortPauseColor: var(--davysGray);
+  --longPauseColor: var(--jet);
+}

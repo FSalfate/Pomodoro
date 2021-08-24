@@ -1,0 +1,118 @@
+@import "effects.css";
+@import "palette.css";
+
+/*GENERAL*/
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  font-size: 3em;
+}
+
+p{
+  margin: 10px 15px;
+}
+
+input[type="button"], input[type="submit"]{
+  padding: 15px;
+  margin: 5px 0px 5px 10px;
+  border: 0;
+  border-radius: 6px;
+
+  font-size: 1em;
+  font-weight: bold;
+
+  color: var(--buttonTextColor);
+  background-color: var(--buttonBGColor);
+}
+
+input[type="button"]:focus, input[type="submit"]:focus{
+  color: var(--buttonBGColor);
+  background-color: var(--buttonTextColor);
+}
+
+/*NAVIGATOR BAR*/
+div.navigatorBar {
+  width: 100%;
+  background-color: var(--navBGColor);
+
+  overflow: hidden;
+
+  font-weight: bold;
+  text-align: left;
+  font-variant: small-caps;
+
+  position: sticky;
+  position: -webkit-sticky;
+
+  top: 0;
+  z-index: 10;
+}
+
+div.navigatorBar * {
+  padding: 0px 40px;
+  float: left;
+
+  color: var(--navTextColor);
+  animation: 1s normal 0s 1 slideInFromLeftScreen;
+}
+
+/*INPUTS*/
+fieldset{
+  width: 700px;
+  margin: 50px;
+}
+
+fieldset label{
+  width: 400px;
+  display: inline-block;
+}
+
+/*CYCLE ELEMENTS*/
+div.cycleDiv{
+  width: 66%;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+div.bracketSign{
+  height: 50px;
+  background-image: url("../img/bigBracket.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*CIRCULAR PROGRESS BAR ELEMENTS*/
+div.circDispContainer {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+div.circDispContainer div {
+  position: relative;
+  display: table-cell;
+  text-align: center;
+}
+
+div.circDispContainer div.circDispDiv div.circDispDivText {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#pomodoroT{
+  color: var(--pomodoroColor);
+}
+
+#shortPauseT{
+  color: var(--shortPauseColor);
+}
+
+#longPauseT{
+  color: var(--longPauseColor);
+}

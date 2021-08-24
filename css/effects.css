@@ -1,0 +1,33 @@
+@keyframes slideInFromLeftScreen {
+  0% {
+    opacity: 0;
+    transform: translateX(-100vw);
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideNFadeIn {
+  0%{
+    opacity: 0;
+    transform: translateX(10%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

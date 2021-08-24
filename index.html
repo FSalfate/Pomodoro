@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <title>NeuralClock</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Aplicación Pomodoro Personalizable">
+
+  <link rel="stylesheet" href="css/pomodoro.css">
+
+  <script src="js/timer.js"></script>
+  <script src="js/timeDisplayer.js"></script>
+  <script src="js/circularTimeDisplayer.js"></script>
+  <script src="js/pomodoroManager.js"></script>
+  <script src="js/displayerRenderer.js"></script>
+  <script src="js/pomodoroHTML.js"></script>
+
+  <script src="js/pomodoroState/nullState.js"></script>
+  <script src="js/pomodoroState/startingState.js"></script>
+  <script src="js/pomodoroState/pomodoroState.js"></script>
+  <script src="js/pomodoroState/shortPauseState.js"></script>
+  <script src="js/pomodoroState/longPauseState.js"></script>
+
+  <script>
+  <!--
+  //NeuralClock object
+  var pomodoroHTML = new PomodoroHTML("mainDiv");
+
+  //Toggle Comments depending if it's being used or tested.
+  const minTime = 60 * 1000;    //Real Time
+  // const minTime = 100;        //Testing Value
+
+  //After window finished loading.
+  window.onload = function(){
+
+    //Load NeuralClock
+    pomodoroHTML.load();
+
+    //Set update every minTime [ms]
+    setInterval(function() {
+      pomodoroHTML.update();
+    }, minTime);
+  }
+  -->
+  </script>
+</head>
+<body>
+  <div class="navigatorBar">
+    <h1>Pomodoro HTML</h1>
+  </div>
+
+  <div class="mainDiv" id="mainDiv">
+  </div>
+
+</body>
+</html>

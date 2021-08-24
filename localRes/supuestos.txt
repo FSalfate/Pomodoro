@@ -1,0 +1,61 @@
+Supuestos:
+  -Para la personalización de cada temporizados, se consideraron rangos fijos
+  más que selección libre, siguiendo un poco el espíritu de Pomodoro (hacer
+  tareas en pequeños intervalos de tiempo):
+    --> Trabajo: de 25 min a 1 hora -> Desde tiempo original de Pomodoro (25 min)
+    al tiempo que más o menos una persona puede estar concentrada (1 hora).
+    -->Descanso 1: de 5 a 15 minutos -> Descanso pequeño.
+    --> Descanso 2: de 20 a 30 minutos -> Descanzo más largo.
+
+  - Se añadió opción de incrementar hasta 5 ciclos antes de Descanso 2 en
+  caso de que a alguien le parezca más conveniente.
+
+  -Static constants se implementaron como getters estaticos (no me quedó muy
+  claro de que otra forma implementarlos).
+
+  TIMER:
+  -Por simplicidad Timer no tira error cuando se intenta cambiar maxTime o
+  minTime.
+
+  -Timer parte en time hasta llegar a 0.
+
+  -Si currentTime llega a 0 simplemente no se sigue reduciendo.
+
+  -Se asumen maxTime y minTime como constantes.
+
+  TIMEDISPLAYER:
+  -TIMER nunca es destruido
+
+Observaciones:
+  -En líneas 29 y 30 de neuralClock.html está la selección del tiempo de
+  actualización. Actualmente esta en testing (actualización cada 100ms), pero
+  debería ser una actualización por minuto (linea 29, comentada).
+
+
+Mejoras:
+  -Convertir DisplayerRenderer en una instancia que contenga una instancia de
+  NeuralClock y este estar encargado de actualizar la pantalla. Del mismo modo
+  podría enlazar los botones de control a la instancia de NeuralClock de mejor
+  manera.
+
+  -Si se requiere información y manipulación de NeuralClock hacer timers
+  públicos.
+
+  -Crear Interfaz o Abstract de PomodoroState (aunque no se que tan necesario
+  sea en javascript). Añadir alert en Abstract y quizas cada clase tenga su
+  mensaje propio (si aplica).
+
+  -Eliminar referencia circular entre PomodoroStates y PomodoroManager. Quizás
+  aquí se podria crear un Abstract que de una tome todas las referencias
+  necesarias.
+
+  -Hacer que de alguna forma la barra de progreso termine antes de lanzar el
+  mensaje.
+
+  -Añadir opción de registrar progreso localmente. Un botón e input de texto (label),
+  que al presionar, añade el tiempo actual a una lista en pantalla con el label,
+  reiniciando el tiempo actual.
+
+  -Añadir opción de siguiente ciclo.
+
+  -Normalizar nombres update, step, tick.
