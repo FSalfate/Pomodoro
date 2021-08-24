@@ -19,4 +19,15 @@ Luego de configurar el Pomodoro y presionar "Iniciar!" este mostrará displayers
 * **Reiniciar:** Se reinician todos los temporizadores. Al reiniciar el Pomodoro este se para, por lo que se tiene que presionar "Iniciar/Continuar" para hacerlo andar nuevamente.
 * **Volver a Configuración:** Volver a la vista inicial, en donde se puede volver a configurar el Pomodoro. El Pomodoro actual se reinicia despues de esto.
 
-Visita el Pomodoro en <a href="https://fsalfate.github.io/Pomodoro/" target="_blank">https://fsalfate.github.io/Pomodoro/</a>.
+## Planes a futuro
+Se podría considerar este proyecto como finalizado, aunque hay un par de caracteristicas que se desearían agregar. Cuando ocurrirá esto o si se llegaran a implementar en algún día no se sabe.
+* Versión en inglés (mayor difusión!).
+* Opción para avanzar al siguiente ciclo antes de que termine el tiempo.
+* Opción para guardar un perfil, o cambiar los rangos de configuración (si es posible solo con HTML y Javascript).
+* Hacer que el navegador cambie automáticamente a la pestaña del Pomodoro una vez terminado un ciclo (si es posible).
+* Opción de tener una lista de tareas: Quizas poder agregar una lista de tareas asociadas a un determinado tiempo de trabajo, el cual avanzaría automáticamente y quizas podría progresar al siguiente ciclo de descanzo inmediatamente después de esto. Otra opción podría ser que al momento de terminar una tarea se pueda agregar a una lista junto con el tiempo empleado en ella, generando un listado de tareas realizadas.
+* Añadir Boostrap al proyecto o, cualquier otra libreria o interfaz que funcione del lado del cliente.
+
+## Link
+
+Visita y utiliza el Pomodoro para realizar tus tareas en <a href="https://fsalfate.github.io/Pomodoro/" target="_blank">https://fsalfate.github.io/Pomodoro/</a>.
